@@ -1,20 +1,25 @@
 //use Roboto font
 html {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
+ $imgKey1: random(1);
+ $list1: 7, 1;
+$nth1: nth($list1, $imgKey1);
 
-  $imgKey1: random(1);
-  $list1: 7, 1;
-  $nth1: nth($list1, $imgKey1);
 
-  $img: "https://cdn.discordapp.com/attachments/745041003865440377/832659565019004929/DarkBanner.png";
-  $imgKey: random($nth1);
-  $list: $img;
-  $nth: nth($list, $imgKey);
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url($nth);
-  background-size: cover;
-  background-position: 50% 30px;
-  background-attachment: fixed;
+$img: 'https://forum.crazyblox.games/uploads/default/original/2X/d/d67151c451318363778df0279fdabd153bb5ebcb.jpg';
+$imgtwo: 'https://forum.crazyblox.games/uploads/default/original/2X/6/65d50cb1457bc461185ed9c4ce07c1a427052a3a.jpg';
+$imgthree: 'https://forum.crazyblox.games/uploads/default/original/2X/a/a0a5b843d5531043759a907a32a92d6aa01d0a56.jpg';
+$imgfour: 'https://forum.crazyblox.games/uploads/default/original/2X/b/b784ee638cc7b4831c867b59de0f589f389429b2.jpg';
+$imgfive: 'https://forum.crazyblox.games/uploads/default/original/2X/4/4276692a6f2b84d09329a94ec7057b5ccc77b302.jpg';
+$imgsix: 'https://forum.crazyblox.games/uploads/default/original/2X/8/89de0b60fa57f567263bfaf7d174b1ad31da4d22.jpg';
+$imgseven: 'https://forum.crazyblox.games/uploads/default/original/2X/a/a0a5b843d5531043759a907a32a92d6aa01d0a56.jpg';
+ $imgKey: random($nth1);
+ $list: $img, $imgtwo, $imgthree, $imgfour, $imgfive, $imgsix, $imgseven;
+$nth: nth($list, $imgKey);
+//   background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('https://media.discordapp.net/attachments/246399980577882112/507662567603306497/HD_BeneathTheRuins.png');
+     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url($nth);
+    background-size: cover;
+    background-position: 50% 30px;
+    background-attachment: fixed;
 }
 
 body input,
