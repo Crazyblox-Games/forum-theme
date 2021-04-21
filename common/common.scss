@@ -5,7 +5,7 @@ html {
    $nth1: nth($list1, $imgKey1);
 
 
-    $img: 'https://media.discordapp.net/attachments/745041003865440377/832659565019004929/DarkBanner.png?width=1256&height=643g';
+    $img: 'https://media.discordapp.net/attachments/745041003865440377/832659565019004929/DarkBanner.png?width=1256&height=643';
     $imgKey: random($nth1);
     $list: $img;
     $nth: nth($list, $imgKey);
